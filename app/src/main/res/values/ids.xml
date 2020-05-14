@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="menu_topbar_leftButtonId" type="id"/>
+    <item name="register_topbar_leftButtonId" type="id"/>
+    <item name="user_topbar_leftButtonId" type="id"/>
+    <item name="user_topbar_rightButtonId" type="id"/>
+
+    <item name="password_topbar_leftButtonId" type="id"/>
+    <item name="add_topbar_leftButtonId" type="id"/>
+
+
+
+    <item name="userChange_topbar_leftButtonId" type="id"/>
+    <item name="list_topbar_leftButtonId" type="id"/>
+    <item name="hisact_leftbuttonId" type="id"/>
+    <item name="myact_leftbuttonId" type="id"/>
+    <item name="myadd_leftbuttonId" type="id"/>
+    <item name="allcom_leftbuttonId" type="id"/>
+    <item name="joinuser_leftbuttonId" type="id"/>
+
+
+<!--    menu_page-->
+    <item name="pager_image1" type="id" />
+    <item name="pager_image2" type="id" />
+    <item name="pager_image3" type="id" />
+    <item name="pager_image4" type="id" />
+</resources>

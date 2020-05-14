@@ -1,0 +1,30 @@
+<resources>
+    <dimen name="my_login_height">40dp</dimen>
+   <dimen name="my_text_size">16sp</dimen>
+    <dimen name="my_login_margintop">15dp</dimen>
+    <dimen name= "my_login_padding_left_right">10dp</dimen>
+
+<!-- menu_end-->
+ <dimen name= "menu_x">30dp</dimen>
+<!--date_picker-->
+    <dimen name="picker_view_height">160dp</dimen>
+    <dimen name="date_unit_text_size">18sp</dimen>
+
+<!--    topbar-->
+    <dimen name="topbar_height">40dp</dimen>
+
+    \
+<!--    list_item divider-->
+    <dimen name="list_divider">1dp</dimen>
+
+    <dimen name="list_padding">1dp</dimen>
+
+    <dimen name="item_right_width">150dp</dimen>
+    <dimen name="item_left_width">100dp</dimen>
+ <dimen name="item_height">30dp</dimen>
+
+ <dimen name="top_height" >50dp</dimen>
+
+<!-- itemMore-->
+ <dimen name="itemMore_width">100dp</dimen>
+</resources>

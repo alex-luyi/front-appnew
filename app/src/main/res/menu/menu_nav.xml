@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_user"
+            android:icon="@drawable/account_menu"
+            android:title="  账号资料"/>
+        <item
+            android:id="@+id/menu_security"
+            android:title="  修改密码"
+            android:icon="@drawable/setting_menu"/>
+        <item
+            android:id="@+id/photo"
+            android:title="  活动预告"
+            android:icon="@drawable/list_menu"/>
+        <item
+            android:id="@+id/dress"
+            android:title="  发起活动"
+            android:icon="@drawable/edit_menu"/>
+        <item
+            android:id="@+id/file"
+            android:title="  我发起的活动"
+            android:icon="@drawable/record_menu" />
+
+        <item
+            android:id="@+id/baoming"
+            android:title="  我报名的活动"
+            android:icon="@drawable/baoming_menu" />
+
+        <item
+        android:id="@+id/join"
+        android:title="  历史参与活动"
+        android:icon="@drawable/join_menu" />
+
+        <item
+            android:id="@+id/quitapp"
+            android:title="  注销"
+            android:icon="@drawable/close" />
+
+    </group>
+</menu>
+    

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoinuserActivity"
+    android:background="@color/white">
+
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@+id/topbar_joinuser"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height"
+        app:qmui_topbar_title_color="@color/white"
+        />
+
+    <RelativeLayout
+        android:id="@+id/view_joinuser"
+        android:layout_below="@id/topbar_joinuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item"
+        android:layout_marginTop="@dimen/my_login_margintop"
+        android:layout_marginLeft="@dimen/my_login_margintop"
+        android:layout_marginRight="@dimen/my_login_margintop"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:layout_width="@dimen/item_right_width"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_username_joinuser_view"
+            android:gravity="center"
+            android:text="学号/工号"
+            android:textColor="@color/bpink"
+            android:textSize="@dimen/my_text_size"
+            android:paddingEnd="@dimen/list_padding"
+            />
+
+        <TextView
+            android:layout_toRightOf="@id/tv_username_joinuser_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_name_joinuser_view"
+            android:gravity="center"
+            android:text="姓名"
+            android:textColor="@color/bpink"
+            android:textSize="@dimen/my_text_size"
+            android:background="@null"
+            />
+
+        ></RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/view_joinuser"
+        android:id="@+id/rv_joinuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        />
+
+
+</RelativeLayout>

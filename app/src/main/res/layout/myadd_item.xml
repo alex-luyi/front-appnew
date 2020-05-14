@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/item"
+    android:layout_marginTop="@dimen/my_login_margintop"
+    android:layout_marginLeft="@dimen/my_login_margintop"
+    android:layout_marginRight="@dimen/my_login_margintop"
+    android:paddingTop = "10dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:layout_width="@dimen/item_right_width"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_title_myaddItemView"
+        android:text="活动名称："
+        android:gravity="center_vertical|right"
+        android:textColor="@color/bpink"
+        android:textSize="@dimen/my_text_size"
+        android:paddingEnd="@dimen/list_padding"
+        />
+
+    <TextView
+        android:layout_toRightOf="@id/tv_title_myaddItemView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et__title_myaddItem"
+        android:gravity="center_vertical|left"
+        android:textColor="@color/black"
+        android:textSize="@dimen/my_text_size"
+        android:background="@null"
+        />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/et__title_myaddItem"
+        android:layout_width="@dimen/item_right_width"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_name_myaddItemView"
+        android:text="活动类型："
+        android:gravity="center_vertical|right"
+        android:textColor="@color/bpink"
+        android:textSize="@dimen/my_text_size"
+        android:paddingEnd="@dimen/list_padding"
+
+        />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/et__title_myaddItem"
+        android:layout_toRightOf="@id/tv_name_myaddItemView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et__name_myaddItem"
+        android:gravity="center_vertical|left"
+        android:textColor="@color/black"
+        android:textSize="@dimen/my_text_size"
+        android:background="@null"
+        />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/et__name_myaddItem"
+        android:layout_width="@dimen/item_right_width"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_place_myaddItemView"
+        android:text="地点："
+        android:gravity="center_vertical|right"
+        android:textColor="@color/bpink"
+        android:textSize="@dimen/my_text_size"
+        />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/et__name_myaddItem"
+        android:layout_toRightOf="@id/tv_place_myaddItemView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et__place_myaddItem"
+        android:gravity="center_vertical|left"
+        android:textColor="@color/black"
+        android:textSize="@dimen/my_text_size"
+        android:background="@null"
+        />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/et__place_myaddItem"
+        android:layout_width="@dimen/item_right_width"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_expnum_myaddItemView"
+        android:text="剩余人数："
+        android:gravity="center_vertical|right"
+        android:textColor="@color/bpink"
+        android:textSize="@dimen/my_text_size"
+        />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/et__place_myaddItem"
+        android:layout_toRightOf="@id/tv_expnum_myaddItemView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et__expnum_myaddtItem"
+        android:gravity="center_vertical|left"
+        android:textColor="@color/black"
+        android:textSize="@dimen/my_text_size"
+        android:background="@null"
+        />
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:layout_marginTop="5dp"
+        android:id="@+id/btn_item_more_myadd"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/tv_expnum_myaddItemView"
+        android:layout_toLeftOf="@id/txtHide"
+        android:text="详情"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/my_text_size"
+        app:qmui_borderColor="@color/bpink"
+        app:qmui_isRadiusAdjustBounds="false"
+        app:qmui_backgroundColor="@color/pink"
+        />
+
+    <TextView
+        android:id="@+id/txtHide"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/btn_item_quit_myadd"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/tv_expnum_myaddItemView"
+        android:layout_toRightOf="@id/txtHide"
+        android:text="退出"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/my_text_size"
+        app:qmui_borderColor="@color/bpink"
+        app:qmui_isRadiusAdjustBounds="false"
+        android:layout_marginTop="5dp"
+        app:qmui_backgroundColor="@color/pink"
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

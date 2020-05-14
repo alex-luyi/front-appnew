@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+
+    >
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@+id/topbar_register"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height"
+        app:qmui_topbar_title_color="@color/white"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_below="@id/topbar_register">
+        <EditText
+
+            android:layout_marginTop="@dimen/my_login_margintop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my_login_height"
+            android:id="@+id/edit_username_register"
+            android:textSize="@dimen/my_text_size"
+            android:textColor="@color/qmui_config_color_black"
+            android:hint="学号/工号"
+            android:background="@drawable/register"
+            android:paddingLeft="@dimen/my_login_padding_left_right"
+            android:paddingRight="@dimen/my_login_padding_left_right"
+            android:maxLines="1"
+            />
+
+        <EditText
+
+            android:layout_below="@id/edit_username_register"
+            android:layout_marginTop="@dimen/my_login_margintop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my_login_height"
+            android:id="@+id/edit_name_register"
+            android:textSize="@dimen/my_text_size"
+            android:textColor="@color/qmui_config_color_black"
+            android:hint="姓名"
+            android:background="@drawable/register"
+            android:paddingLeft="@dimen/my_login_padding_left_right"
+            android:paddingRight="@dimen/my_login_padding_left_right"
+            android:maxLines="1"
+            />
+
+        <EditText
+            android:layout_below="@id/edit_name_register"
+            android:layout_marginTop="@dimen/my_login_margintop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my_login_height"
+            android:id="@+id/edit_password_register"
+            android:textSize="@dimen/my_text_size"
+            android:textColor="@color/qmui_config_color_black"
+            android:hint="密码"
+            android:background="@drawable/register"
+            android:paddingLeft="@dimen/my_login_padding_left_right"
+            android:paddingRight="@dimen/my_login_padding_left_right"
+            />
+
+        <TextView
+            android:id="@+id/tv_identity"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/my_login_height"
+            android:text="注册身份"
+            android:textSize="@dimen/my_text_size"
+            android:gravity="center"
+            android:background="@drawable/register"
+            android:layout_below="@id/edit_password_register"
+            android:layout_marginTop="@dimen/my_login_margintop"
+            android:textColor="@color/gray"
+            android:paddingLeft="@dimen/my_login_padding_left_right"
+
+            />
+
+        <RadioGroup
+            android:id="@+id/rg_identity"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my_login_height"
+            android:layout_below="@id/edit_password_register"
+            android:layout_toRightOf="@id/tv_identity"
+            android:layout_marginTop="@dimen/my_login_margintop"
+            android:background="@drawable/register"
+            android:orientation="horizontal"
+
+            >
+            <RadioButton
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="@dimen/my_login_margintop"
+                android:layout_height="@dimen/my_login_height"
+                android:layout_width="wrap_content"
+                android:text="老师"
+                android:textSize="@dimen/my_text_size"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/gray"
+                android:buttonTint="@color/pink"
+                />
+
+            <RadioButton
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="@dimen/my_login_margintop"
+                android:layout_height="@dimen/my_login_height"
+                android:layout_width="wrap_content"
+                android:text="学生"
+                android:textSize="@dimen/my_text_size"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/gray"
+                android:buttonTint="@color/pink"
+                />
+
+        </RadioGroup>
+
+
+
+        <EditText
+            android:layout_below="@id/tv_identity"
+            android:layout_marginTop="@dimen/my_login_margintop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my_login_height"
+            android:id="@+id/edit_email"
+            android:textSize="@dimen/my_text_size"
+            android:textColor="@color/qmui_config_color_black"
+            android:hint="邮箱"
+            android:background="@drawable/register"
+            android:paddingLeft="@dimen/my_login_padding_left_right"
+            android:paddingRight="@dimen/my_login_padding_left_right"
+            />
+
+        <EditText
+            android:layout_below="@id/edit_email"
+            android:layout_marginTop="@dimen/my_login_margintop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my_login_height"
+            android:id="@+id/edit_phone"
+            android:textSize="@dimen/my_text_size"
+            android:textColor="@color/qmui_config_color_black"
+            android:hint="手机号"
+            android:background="@drawable/register"
+            android:paddingLeft="@dimen/my_login_padding_left_right"
+            android:paddingRight="@dimen/my_login_padding_left_right"
+            android:inputType="number"
+            />
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/btn_register"
+            android:layout_width="200dp"
+            android:layout_height="@dimen/my_login_height"
+            android:layout_below="@id/edit_phone"
+            android:layout_marginTop="@dimen/my_login_margintop"
+            android:layout_centerHorizontal="true"
+            app:qmui_radius="5dp"
+            app:qmui_borderWidth="1dp"
+            app:qmui_borderColor="@color/colorPrimary_login"
+            android:text="完成注册"
+            android:textColor="@color/white"
+            android:textSize="@dimen/my_text_size"
+            app:qmui_backgroundColor="@color/pink"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/txt_web"
+            android:layout_below="@id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my_login_height"
+            android:gravity="center"
+            android:text="完成注册即代表你同意用户协议"
+            android:textColor="@color/white"
+            android:autoLink="web|all"/>
+        ></RelativeLayout>
+
+
+    ></RelativeLayout>

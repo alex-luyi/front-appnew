@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddcomActivity">
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@+id/topbar_addcom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height"
+        app:qmui_topbar_title_color="@color/white"
+        />
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/topbar_addcom"
+        android:id="@+id/et_addcom_addcom"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="10dp"
+        android:hint="请输入评价"
+        android:textColorHint="@color/bpink"
+        android:textColor="@color/black"
+        android:textSize="@dimen/my_text_size"
+        android:paddingTop="@dimen/my_login_padding_left_right"
+        android:gravity="top"
+        android:background="@drawable/item"
+        android:paddingLeft="@dimen/my_login_padding_left_right"
+        android:paddingRight="@dimen/my_login_padding_left_right"
+
+        />
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/btn_addcom_addcom"
+        android:layout_width="200dp"
+        android:layout_height="@dimen/my_login_height"
+        android:layout_below="@id/et_addcom_addcom"
+        android:layout_marginTop="@dimen/my_login_margintop"
+        android:layout_centerHorizontal="true"
+        app:qmui_radius="5dp"
+        app:qmui_borderWidth="1dp"
+        app:qmui_borderColor="@color/colorPrimary_login"
+        android:text="提交评价"
+        android:textColor="@color/white"
+        android:textSize="@dimen/my_text_size"
+        app:qmui_backgroundColor="@color/pink"
+
+        />
+
+
+</RelativeLayout>

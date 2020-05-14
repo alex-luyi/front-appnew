@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserChangeActivity">
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@+id/topbar_userChange"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height"
+        app:qmui_topbar_title_color="@color/white"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_below="@id/topbar_userChange">
+
+
+        <TextView
+
+            android:layout_marginTop="@dimen/my_login_margintop"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/my_login_height"
+            android:id="@+id/tv_email_userChange_view"
+            android:textSize="@dimen/my_text_size"
+            android:textColor="@color/black"
+            android:text="邮箱"
+            android:background="@drawable/register"
+            android:paddingLeft="@dimen/my_login_padding_left_right"
+            android:paddingRight="@dimen/my_login_padding_left_right"
+            android:gravity="center_vertical"
+            />
+
+        <EditText
+            android:layout_toRightOf="@id/tv_email_userChange_view"
+            android:layout_marginTop="@dimen/my_login_margintop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my_login_height"
+            android:id="@+id/et_email_userChange"
+            android:textSize="@dimen/my_text_size"
+            android:textColor="@color/black"
+            android:background="@drawable/register"
+            android:paddingLeft="@dimen/my_login_padding_left_right"
+            android:paddingRight="@dimen/my_login_padding_left_right"
+            android:gravity="center_vertical"
+
+            />
+
+        <TextView
+            android:layout_below="@id/tv_email_userChange_view"
+            android:layout_marginTop="@dimen/my_login_margintop"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/my_login_height"
+            android:id="@+id/tv_phone_userChange_view"
+            android:textSize="@dimen/my_text_size"
+            android:textColor="@color/black"
+            android:text="手机号"
+            android:background="@drawable/register"
+            android:paddingLeft="@dimen/my_login_padding_left_right"
+            android:paddingRight="@dimen/my_login_padding_left_right"
+            android:gravity="center_vertical"
+            />
+
+        <EditText
+            android:layout_toRightOf="@id/tv_phone_userChange_view"
+            android:layout_below="@id/tv_email_userChange_view"
+            android:layout_marginTop="@dimen/my_login_margintop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my_login_height"
+            android:id="@+id/et_phone_userChange"
+            android:textSize="@dimen/my_text_size"
+            android:textColor="@color/black"
+            android:background="@drawable/register"
+            android:paddingLeft="@dimen/my_login_padding_left_right"
+            android:paddingRight="@dimen/my_login_padding_left_right"
+            android:gravity="center_vertical"
+            android:inputType="number"
+
+            />
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/btn_userChange"
+            android:layout_width="200dp"
+            android:layout_height="@dimen/my_login_height"
+            android:layout_below="@id/tv_phone_userChange_view"
+            android:layout_marginTop="@dimen/my_login_margintop"
+            android:layout_centerHorizontal="true"
+            app:qmui_radius="5dp"
+            app:qmui_borderWidth="1dp"
+            app:qmui_borderColor="@color/colorPrimary_login"
+            android:text="提交修改"
+            android:textColor="@color/white"
+            android:textSize="@dimen/my_text_size"
+            app:qmui_backgroundColor="@color/pink"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

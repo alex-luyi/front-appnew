@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemMoreActivity">
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@+id/topbar_itemMore"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height"
+        app:qmui_topbar_title_color="@color/white"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_below="@id/topbar_itemMore">
+
+        <TextView
+            android:layout_marginTop="@dimen/my_login_margintop"
+            android:layout_width="@dimen/itemMore_width"
+            android:layout_height="@dimen/my_login_height"
+            android:id="@+id/tv_aname_itemMore_view"
+            android:textSize="@dimen/my_text_size"
+            android:textColor="@color/bpink"
+            android:text="活动名称 "
+            android:gravity="center_vertical|right"
+            android:background="@drawable/register"
+            android:paddingLeft="@dimen/my_login_padding_left_right"
+            android:paddingRight="@dimen/my_login_padding_left_right"
+            android:maxLines="1"
+            />
+
+        <TextView
+            android:layout_toRightOf="@id/tv_aname_itemMore_view"
+            android:layout_marginTop="@dimen/my_login_margintop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my_login_height"
+            android:id="@+id/tv_aname_itemMore"
+            android:textSize="@dimen/my_text_size"
+            android:textColor="@color/qmui_config_color_black"
+            android:background="@drawable/register"
+            android:paddingLeft="@dimen/my_login_padding_left_right"
+            android:paddingRight="@dimen/my_login_padding_left_right"
+            android:maxLines="1"
+            android:gravity="center_vertical|left"
+            />
+
+        <TextView
+            android:layout_below="@id/tv_aname_itemMore_view"
+            android:layout_marginTop="@dimen/my_login_margintop"
+            android:layout_width="@dimen/itemMore_width"
+            android:layout_height="@dimen/my_login_height"
+            android:id="@+id/tv_username_itemMore_view"
+            android:textSize="@dimen/my_text_size"
+            android:textColor="@color/myblue"
+            android:gravity="center_vertical|right"
+            android:text="发起人 "
+            android:background="@drawable/register"
+            android:paddingLeft="@dimen/my_login_padding_left_right"
+            android:paddingRight="@dimen/my_login_padding_left_right"
+            android:maxLines="1"
+            />
+
+        <TextView
+            android:layout_below="@id/tv_aname_itemMore_view"
+            android:layout_toRightOf="@id/tv_username_itemMore_view"
+            android:layout_marginTop="@dimen/my_login_margintop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my_login_height"
+            android:id="@+id/tv_username_itemMore"
+            android:textSize="@dimen/my_text_size"
+            android:textColor="@color/black"
+            android:background="@drawable/register"
+            android:paddingLeft="@dimen/my_login_padding_left_right"
+            android:paddingRight="@dimen/my_login_padding_left_right"
+            android:maxLines="1"
+            android:gravity="center_vertical|left"
+            />
+
+        <TextView
+            android:layout_below="@id/tv_username_itemMore_view"
+            android:layout_marginTop="@dimen/my_login_margintop"
+            android:layout_width="@dimen/itemMore_width"
+            android:layout_height="@dimen/my_login_height"
+            android:id="@+id/tv_stime_itemMore_view"
+            android:textSize="@dimen/my_text_size"
+            android:textColor="@color/myblue"
+            android:gravity="center_vertical|right"
+            android:text="开始时间 "
+            android:background="@drawable/register"
+            android:paddingLeft="@dimen/my_login_padding_left_right"
+            android:paddingRight="@dimen/my_login_padding_left_right"
+            android:maxLines="1"
+            />
+
+        <TextView
+            android:layout_below="@id/tv_username_itemMore_view"
+            android:layout_toRightOf="@id/tv_username_itemMore_view"
+            android:layout_marginTop="@dimen/my_login_margintop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my_login_height"
+            android:id="@+id/tv_stime_itemMore"
+            android:textSize="@dimen/my_text_size"
+            android:textColor="@color/black"
+            android:background="@drawable/register"
+            android:paddingLeft="@dimen/my_login_padding_left_right"
+            android:paddingRight="@dimen/my_login_padding_left_right"
+            android:maxLines="1"
+            android:gravity="center_vertical|left"
+            />
+
+        <TextView
+            android:layout_below="@id/tv_stime_itemMore"
+            android:layout_marginTop="@dimen/my_login_margintop"
+            android:layout_width="@dimen/itemMore_width"
+            android:layout_height="@dimen/my_login_height"
+            android:id="@+id/tv_etime_itemMore_view"
+            android:textSize="@dimen/my_text_size"
+            android:textColor="@color/myblue"
+            android:gravity="center_vertical|right"
+            android:text="结束时间 "
+            android:background="@drawable/register"
+            android:paddingLeft="@dimen/my_login_padding_left_right"
+            android:paddingRight="@dimen/my_login_padding_left_right"
+            android:maxLines="1"
+            />
+
+        <TextView
+            android:layout_below="@id/tv_stime_itemMore"
+            android:layout_toRightOf="@id/tv_username_itemMore_view"
+            android:layout_marginTop="@dimen/my_login_margintop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my_login_height"
+            android:id="@+id/tv_etime_itemMore"
+            android:textSize="@dimen/my_text_size"
+            android:textColor="@color/black"
+            android:background="@drawable/register"
+            android:paddingLeft="@dimen/my_login_padding_left_right"
+            android:paddingRight="@dimen/my_login_padding_left_right"
+            android:maxLines="1"
+            android:gravity="center_vertical|left"
+            />
+
+        <TextView
+            android:layout_below="@id/tv_etime_itemMore_view"
+            android:layout_marginTop="@dimen/my_login_margintop"
+            android:layout_width="@dimen/itemMore_width"
+            android:layout_height="@dimen/my_login_height"
+            android:id="@+id/tv_place_itemMore_view"
+            android:textSize="@dimen/my_text_size"
+            android:textColor="@color/myblue"
+            android:gravity="center_vertical|right"
+            android:text="活动地点 "
+            android:background="@drawable/register"
+            android:paddingLeft="@dimen/my_login_padding_left_right"
+            android:paddingRight="@dimen/my_login_padding_left_right"
+            android:maxLines="1"
+            />
+
+        <TextView
+            android:layout_below="@id/tv_etime_itemMore_view"
+            android:layout_toRightOf="@id/tv_username_itemMore_view"
+            android:layout_marginTop="@dimen/my_login_margintop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my_login_height"
+            android:id="@+id/tv_place_itemMore"
+            android:textSize="@dimen/my_text_size"
+            android:textColor="@color/black"
+            android:background="@drawable/register"
+            android:paddingLeft="@dimen/my_login_padding_left_right"
+            android:paddingRight="@dimen/my_login_padding_left_right"
+            android:maxLines="1"
+            android:gravity="center_vertical|left"
+            />
+
+        <TextView
+            android:layout_below="@id/tv_place_itemMore"
+            android:layout_marginTop="@dimen/my_login_margintop"
+            android:layout_width="@dimen/itemMore_width"
+            android:layout_height="@dimen/my_login_height"
+            android:id="@+id/tv_expNum_itemMore_view"
+            android:textSize="@dimen/my_text_size"
+            android:textColor="@color/myblue"
+            android:gravity="center_vertical|right"
+            android:text="剩余人数 "
+            android:background="@drawable/register"
+            android:paddingLeft="@dimen/my_login_padding_left_right"
+            android:paddingRight="@dimen/my_login_padding_left_right"
+            android:maxLines="1"
+            />
+
+        <TextView
+            android:layout_below="@id/tv_place_itemMore"
+            android:layout_toRightOf="@id/tv_username_itemMore_view"
+            android:layout_marginTop="@dimen/my_login_margintop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my_login_height"
+            android:id="@+id/tv_expNum_itemMore"
+            android:textSize="@dimen/my_text_size"
+            android:textColor="@color/black"
+            android:background="@drawable/register"
+            android:paddingLeft="@dimen/my_login_padding_left_right"
+            android:paddingRight="@dimen/my_login_padding_left_right"
+            android:maxLines="1"
+            android:gravity="center_vertical|left"
+            />
+
+        <TextView
+            android:layout_below="@id/tv_expNum_itemMore"
+            android:layout_marginTop="@dimen/my_login_margintop"
+            android:layout_width="@dimen/itemMore_width"
+            android:layout_height="@dimen/my_login_height"
+            android:id="@+id/tv_type_itemMore_view"
+            android:textSize="@dimen/my_text_size"
+            android:textColor="@color/myblue"
+            android:gravity="center_vertical|right"
+            android:text="活动类型 "
+            android:background="@drawable/register"
+            android:paddingLeft="@dimen/my_login_padding_left_right"
+            android:paddingRight="@dimen/my_login_padding_left_right"
+            android:maxLines="1"
+            />
+
+        <TextView
+            android:layout_below="@id/tv_expNum_itemMore"
+            android:layout_toRightOf="@id/tv_username_itemMore_view"
+            android:layout_marginTop="@dimen/my_login_margintop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my_login_height"
+            android:id="@+id/tv_type_itemMore"
+            android:textSize="@dimen/my_text_size"
+            android:textColor="@color/black"
+            android:background="@drawable/register"
+            android:paddingLeft="@dimen/my_login_padding_left_right"
+            android:paddingRight="@dimen/my_login_padding_left_right"
+            android:maxLines="1"
+            android:gravity="center_vertical|left"
+            />
+
+        <TextView
+            android:layout_below="@id/tv_type_itemMore"
+            android:layout_marginTop="@dimen/my_login_margintop"
+            android:layout_width="@dimen/itemMore_width"
+            android:layout_height="@dimen/my_login_height"
+            android:id="@+id/tv_amore_itemMore_view"
+            android:textSize="@dimen/my_text_size"
+            android:textColor="@color/myblue"
+            android:gravity="center_vertical|right"
+            android:text="活动详情 "
+            android:paddingLeft="@dimen/my_login_padding_left_right"
+            android:paddingRight="@dimen/my_login_padding_left_right"
+            android:maxLines="1"
+            />
+
+        <TextView
+            android:layout_marginTop="@dimen/my_login_margintop"
+            android:layout_below="@id/tv_type_itemMore"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_toLeftOf="@id/tv_amore_itemMore"
+            android:background="@drawable/register"
+            />
+
+        <TextView
+            android:layout_below="@id/tv_type_itemMore"
+            android:layout_toRightOf="@id/tv_username_itemMore_view"
+            android:layout_marginTop="@dimen/my_login_margintop"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/tv_amore_itemMore"
+            android:textSize="@dimen/my_text_size"
+            android:textColor="@color/black"
+            android:background="@drawable/register"
+            android:paddingLeft="@dimen/my_login_padding_left_right"
+            android:paddingRight="@dimen/my_login_padding_left_right"
+            android:gravity="left"
+            android:paddingTop="10dp"
+            />
+
+
+
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/btn_itemmore"
+            android:layout_width="200dp"
+            android:layout_height="@dimen/my_login_height"
+            android:layout_below="@id/tv_amore_itemMore"
+            android:layout_marginTop="@dimen/my_login_margintop"
+            android:layout_centerHorizontal="true"
+            app:qmui_radius="5dp"
+            app:qmui_borderWidth="1dp"
+            app:qmui_borderColor="@color/colorPrimary_login"
+            android:text="我要参加"
+            android:textColor="@color/white"
+            android:textSize="@dimen/my_text_size"
+            app:qmui_backgroundColor="@color/pink"
+
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

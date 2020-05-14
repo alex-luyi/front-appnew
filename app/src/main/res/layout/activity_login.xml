@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".LoginActivity"
+    android:padding="15dp"
+    android:background="@drawable/background1"
+    >
+
+
+    <ImageView
+        android:layout_width="396dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="60dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo3" />
+
+    <EditText
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/edit_username_login"
+        android:textSize="@dimen/my_text_size"
+        android:textColor="@color/gray"
+        android:hint="学号/工号"
+        android:background="@drawable/login"
+        android:paddingLeft="@dimen/my_login_padding_left_right"
+        android:paddingRight="@dimen/my_login_padding_left_right"
+        android:maxLines="1"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/user"
+
+
+        />
+
+    <EditText
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/edit_username_login"
+        android:layout_marginTop="@dimen/my_login_margintop"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/edit_password_login"
+        android:textSize="@dimen/my_text_size"
+        android:textColor="@color/qmui_config_color_black"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:background="@drawable/login"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/lock"
+        android:paddingLeft="@dimen/my_login_padding_left_right"
+        android:paddingRight="@dimen/my_login_padding_left_right"
+
+        />
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+       android:id="@+id/btn_register"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edit_password_login"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_toLeftOf="@id/txtHide"
+        android:layout_marginRight="20dp"
+        app:qmui_radius="5dp"
+        app:qmui_borderWidth="1dp"
+        app:qmui_borderColor="@color/gray"
+        android:text="注册"
+        android:textColor="#4C4C4C"
+        android:textSize="@dimen/my_text_size"
+
+
+        />
+
+    <TextView
+        android:id="@+id/txtHide"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/btn_login"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edit_password_login"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/txtHide"
+        app:qmui_radius="5dp"
+        app:qmui_borderWidth="1dp"
+        app:qmui_borderColor="@color/gray"
+        android:text="登录"
+        android:textColor="#4C4C4C"
+        android:textSize="@dimen/my_text_size"
+
+
+        />
+
+
+
+
+</RelativeLayout>

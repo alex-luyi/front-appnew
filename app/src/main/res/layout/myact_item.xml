@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/item"
+    android:layout_marginTop="@dimen/my_login_margintop"
+    android:layout_marginLeft="@dimen/my_login_margintop"
+    android:layout_marginRight="@dimen/my_login_margintop"
+    android:paddingTop = "10dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:layout_width="@dimen/item_right_width"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_title_myactItemView"
+        android:text="活动名称："
+        android:gravity="center_vertical|right"
+        android:textColor="@color/bpink"
+        android:textSize="@dimen/my_text_size"
+        android:paddingEnd="@dimen/list_padding"
+        />
+
+    <TextView
+        android:layout_toRightOf="@id/tv_title_myactItemView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv__title_myactItem"
+        android:gravity="center_vertical|left"
+        android:textColor="@color/black"
+        android:textSize="@dimen/my_text_size"
+        android:background="@null"
+        />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/tv__title_myactItem"
+        android:layout_width="@dimen/item_right_width"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_status_myactItemView"
+        android:text="审核状态："
+        android:gravity="center_vertical|right"
+        android:textColor="@color/bpink"
+        android:textSize="@dimen/my_text_size"
+        android:paddingEnd="@dimen/list_padding"
+
+        />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/tv__title_myactItem"
+        android:layout_toRightOf="@id/tv_status_myactItemView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_status_myactItem"
+        android:gravity="center_vertical|left"
+        android:textColor="@color/black"
+        android:textSize="@dimen/my_text_size"
+        android:background="@null"
+        />
+
+
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:layout_marginTop="5dp"
+        android:id="@+id/btn_joinuser_myact"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/tv_status_myactItemView"
+        android:text="查看报名列表"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/my_text_size"
+        app:qmui_borderColor="@color/bpink"
+        app:qmui_isRadiusAdjustBounds="false"
+        app:qmui_backgroundColor="@color/pink"
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

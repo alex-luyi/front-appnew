@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myappv2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/screen"
+        android:label="航迹"
+        android:roundIcon="@drawable/screen"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".JoinuserActivity"></activity>
+        <activity android:name=".MyactActivity" />
+        <activity android:name=".AddcomActivity" />
+        <activity android:name=".AllcomActivity" />
+        <activity android:name=".MyaddActivity" />
+        <activity android:name=".HisactActivity" />
+        <activity android:name=".ItemMoreActivity" />
+        <activity android:name=".PasswordActivity" />
+        <activity android:name=".ListActivity" />
+        <activity android:name=".UserChangeActivity" />
+        <activity android:name=".UserActivity" />
+        <activity android:name=".MenuActivity" />
+        <activity
+            android:name=".AddActivity"
+            android:label="发起活动" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="注册" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="登录" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
